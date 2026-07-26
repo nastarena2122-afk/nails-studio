@@ -1,105 +1,252 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nails Studio | Маникюр и педикюр</title>
+    <title>Анастасия | Топ-мастер ногтевого сервиса</title>
     <!-- Google Fonts -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stulesheet">
-     <!-- Иконки Font Awesome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-     <!-- Полключение CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Иконки -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!--Шапка сайта-->
-    <header class="header">
-        <div class="logo">NailsStudio</div>
-        <nav class="nav">
-            <a href="#about">0 мне</a>
-            <a href="#services">Прайс</a>
-            <a href="#portfolio">Портфолио</a>
-            <a href="#contacts">Контакты</a>
-        </nav>
-    </header>
+  <!-- Шапка -->
+  <header class="header">
+    <div class="logo">NAILS<span>.STUDIO</span></div>
+    <nav class="nav">
+      <a href="#about">О мастере</a>
+      <a href="#portfolio">Портфолио</a>
+      <a href="#services">Прайс</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a href="#contacts" class="btn btn-sm">Записаться</a>
+  </header>
 
-    <!--Главный экран-->
-    <section class="hero">
-        <div class="hero-contact"></div>
-             <h1> Идеальный маникюр, который подчеркивает индивидуальность</h1>
-             <p>Безопасное снятие, идеальное покрытие и уютная атмосфера</p>
-             <a href="#contacts" class="btn">Записаться</a>
+  <main class="container">
+    
+    <!-- Главный экран (Hero) -->
+    <section class="hero-split">
+      <div class="hero-text">
+        <div class="badge-pill">
+          <i class="fa-solid fa-sparkles"></i> Эстетика & Безопасность
         </div>
+        <h1>Идеальный маникюр, подчеркивающий твою уникальность</h1>
+        <p>Безупречные блики, стойкое покрытие от 3-х недель и полная дезинфекция по стандартам СанПиН.</p>
+        <div class="hero-btns">
+          <a href="#contacts" class="btn">Записаться на визит</a>
+          <a href="#portfolio" class="btn btn-outline">Смотреть работы</a>
+        </div>
+        <div class="hero-trust">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span><strong>5.0</strong> (120+ отзывов довольных клиентов)</span>
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <img src="img/hero.jpg" alt="Маникюр" class="hero-img">
+        <div class="floating-badge badge-1">
+          <i class="fa-solid fa-certificate"></i>
+          <div>
+            <strong>100% Стерильно</strong>
+            <small>Сухожар MicroStop</small>
+          </div>
+        </div>
+        <div class="floating-badge badge-2">
+          <i class="fa-solid fa-heart"></i>
+          <div>
+            <strong>7 дней</strong>
+            <small>Гарантия на покрытие</small>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Блок Прииумущества-->
-     <selection class="features">
-        <div class="feature-card">
-            <i class="fa-solid fa-shield-virus feature-icon"></i>
-            <h3>100% Стерильно</h3>
-            <p>3 этапа обработки по СанПин, сухожар MicroStop и одноразовые расходники.</p>
-        </div>
-        <div class="feature-card">
-            <i class="fa-solid fa-gem feature-icon"></i>
-            <h3>Качественные материалы</h3>
-            <p>Используем только проверенные и сертифицированные материалы.</p>
-        </div>
-     </selection>
-    
+    <!-- Преимущества -->
+    <section class="features">
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-shield-virus"></i></div>
+        <h3>Медицинская стерильность</h3>
+        <p>Дезинфекция, УЗ-чистка и сухожар. Крафт-пакет вскрывается строго при вас.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-gem"></i></div>
+        <h3>Премиум материалы</h3>
+        <p>Гипоаллергенные гели и пигменты премиум-класса без сколов и отслоек.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+        <h3>Скорость и качество</h3>
+        <p>Аппаратный и комбинированный маникюр с покрытием всего за 1.5–2 часа.</p>
+      </div>
+    </section>
 
-    <!--Прайс-лист-->
-    <section class="pricing" id="services">
-        <h2>Услуги и цены</h2>
-        <div class="price-cards">
-            <div class="card">
-                <h3>Маникюр + Покрытие</h3>
-                <p class="price">30 EU</p>
-                <p>Снятие + гигиенический маникюр + покрытие</p>
+    <!-- Визитная карточка / Анкета мастера -->
+    <section class="about" id="about">
+      <div class="about-grid">
+        <div class="about-photo">
+          <img src="img/master.jpg" alt="Анастасия - мастер маникюра">
+          <div class="experience-tag">
+            <span class="num">3+</span>
+            <span class="text">года опыта</span>
+          </div>
+        </div>
+        
+        <div class="about-info">
+          <span class="section-subtitle">Анкета мастера</span>
+          <h2>Привет! Я Анастасия 👋</h2>
+          <p class="about-bio">Сертифицированный мастер ногтевого сервиса. Мой подход — это тонкое, эстетичное покрытие, сохраняющее здоровье натурального ногтя, и абсолютная стерильность на каждом этапе.</p>
+          
+          <div class="stats-row">
+            <div class="stat-item">
+              <h4>1 200+</h4>
+              <p>Довольных клиентов</p>
             </div>
-        <div class="card">
-            <h3>Наращивание ногтей</h3>
-            <p class="price">Длина S: 35 EU</p>
-            <p class="price">Длина M: 40 EU</p>
-            <p class="price">Длина L: 45 EU</p>
-            <p class="price">Длина XL: 50 EU</p>
-        </div>
-        <div class="card">
-            <h3>Дизайн: Лёгкий (стемпинг, стразы, фигурки до 2 ногтей, втирка)</h3>
-            <p class="price">Бесплатно</p>
-            <h3>Дизайн: Сложный ( френч, многослойный дизайн, ручная роспись)</h3>
-            <p class="price">5 EU</p>
-        </div>
-    </div>
-</section>
+            <div class="stat-item">
+              <h4>15+</h4>
+              <p>Сертификатов и курсов</p>
+            </div>
+            <div class="stat-item">
+              <h4>100%</h4>
+              <p>Безопасность</p>
+            </div>
+          </div>
 
-    <!-- Блок FAQ-->
-     <section class="faq">
-        <h2>Часто задаваемые вопросы</h2>
-        <div class="faq-container">
-            <details class="faq-item">
-                <summary>Сколько времени занимает маникюр?</summary>
-                <p>В среднем маникюр занимает от 1.5 до 2 часов в зависимости от сложности исходника, запроса и дизайна.</p>
-            </details>
-            <details class="faq-item">
-                <summary>Как вы стерилизуете инструменты?</summary>
-                <p>Мы используем современные методы стерилизации, включая автоклавную обработку и использование одноразовых расходников.</p>
-            </details>
-            <details class="faq-item">
-                <summary>Сколько держиться покрытие?</summary>
-                <p>В среднем от 3 до 4 недель. Срок носки зависит от индивидуальных особенностей организма и использования ногтей</p>
-            </details>
+          <div class="skills-tags">
+            <span class="tag">#КомбиМаникюр</span>
+            <span class="tag">#НаращиваниеГелем</span>
+            <span class="tag">#ЭстетичныйФренч</span>
+            <span class="tag">#SmartПедикюр</span>
+          </div>
         </div>
-     </section>
+      </div>
+    </section>
 
-    <!-- Контакты -->
-     <footer id="contacts" class="footer">
-        <h2>Записаться</h2>
-        <p>Пишите в удобный мессенджер:</p>
-        <div class="social-links">
-            <a href="https://www.instagram.com/_nasta_nailss_/" target="_blank">Instagram</a>
-            <a href="https://www.facebook.com/profile.php?id=61554299922585" target="_blank">Facebook</a>
+    <!-- Портфолио -->
+    <section class="portfolio" id="portfolio">
+      <div class="section-header">
+        <span class="section-subtitle">Галерея</span>
+        <h2>Примеры моих работ</h2>
+      </div>
+      
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600" alt="Работа 1">
+          <div class="portfolio-overlay">
+            <h4>Нюдовое покрытие & Тонкие линии</h4>
+            <p>Маникюр + Выравнивание</p>
+          </div>
         </div>
-     </footer>
+        <div class="portfolio-item">
+          <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=600" alt="Работа 2">
+          <div class="portfolio-overlay">
+            <h4>Классический френч</h4>
+            <p>Гелевое укрепление</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=600" alt="Работа 3">
+          <div class="portfolio-overlay">
+            <h4>Гелевое наращивание</h4>
+            <p>Длина М + Форма Миндаль</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Прайс-лист -->
+    <section class="pricing" id="services">
+      <div class="section-header">
+        <span class="section-subtitle">Стоимость</span>
+        <h2>Услуги и цены</h2>
+      </div>
+
+      <div class="price-cards">
+        <div class="card">
+          <h3>Гигиенический маникюр</h3>
+          <div class="price">20 €</div>
+          <p class="card-desc">Для тех, кто предпочитает естественную красоту ногтей без покрытия.</p>
+          <ul class="card-features">
+            <li><i class="fa-solid fa-check"></i> Снятие старого материала</li>
+            <li><i class="fa-solid fa-check"></i> Аппаратный / комби маникюр</li>
+            <li><i class="fa-solid fa-check"></i> Уход за кутикулой и маслом</li>
+          </ul>
+        </div>
+
+        <div class="card popular">
+          <div class="popular-badge">ХИТ ПРОДАЖ</div>
+          <h3>Маникюр + Покрытие</h3>
+          <div class="price">30 €</div>
+          <p class="card-desc">Полный комплекс для идеальных ногтей на 3-4 недели.</p>
+          <ul class="card-features">
+            <li><i class="fa-solid fa-check"></i> Безопасное снятие</li>
+            <li><i class="fa-solid fa-check"></i> Выравнивание ногтевой пластины</li>
+            <li><i class="fa-solid fa-check"></i> Покрытие гель-лаком</li>
+            <li><i class="fa-solid fa-check"></i> Легкий дизайн 2-х ногтей</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Наращивание / Моделирование</h3>
+          <div class="price">от 35 €</div>
+          <p class="card-desc">Создание желаемой длины и идеальной формы гелем/акригелем.</p>
+          <ul class="card-features">
+            <li><i class="fa-solid fa-check"></i> Маникюр + подрезка кутикулы</li>
+            <li><i class="fa-solid fa-check"></i> Наращивание на формы (S / M / L)</li>
+            <li><i class="fa-solid fa-check"></i> Цветное покрытие на выбор</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="section-header">
+        <span class="section-subtitle">Информация</span>
+        <h2>Частые вопросы</h2>
+      </div>
+
+      <div class="faq-container">
+        <details class="faq-item">
+          <summary>Сколько держится покрытие?</summary>
+          <p>При соблюдении простых рекомендаций мои клиенты носят покрытие от 3 до 4 недель без сколов, отслоек и трещин.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Как вы обрабатываете инструменты?</summary>
+          <p>Инструменты проходят 3 этапа: 1) Дезинфекция в дезрастворе, 2) Промывка и УЗ-чистка, 3) Стерилизация в сухожаровом шкафу ГП-10 при 180°C. Крафт-пакет вскрывается строго при вас!</p>
+        </details>
+        <details class="faq-item">
+          <summary>Что делать, если появится скол?</summary>
+          <p>На все мои работы действует гарантия 7 дней. Если что-то случится с покрытием в течение недели — я бесплатно всё переделаю!</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Подвал / Запись -->
+    <footer id="contacts" class="footer">
+      <h2>Записаться на удобное время</h2>
+      <p>Выберите любой удобный мессенджер для быстрой записи:</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/_nasta_nailss_/" target="_blank" class="social-btn insta">
+          <i class="fa-brands fa-instagram"></i> Instagram
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61554299922585" target="_blank" class="social-btn fb">
+          <i class="fa-brands fa-facebook-f"></i> Facebook
+        </a>
+      </div>
+    </footer>
+
+  </main>
+
+</body>
+</html>
