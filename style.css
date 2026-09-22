@@ -644,3 +644,60 @@ body {
         justify-content: center;
     }
 }
+
+/* Стили для плашки калькулятора */
+.calc-section {
+    margin: 40px 0;
+}
+
+.calc-card {
+    background-color: #f7f3f0;
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.calc-card h2 {
+    font-size: 20px;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.calc-subtitle {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.calc-services {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.calc-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.calc-item input {
+    width: 18px;
+    height: 18px;
+    accent-color: #e5989b;
+    cursor: pointer;
+}
+
+.calc-result {
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.calc-result p {
+    margin: 4px 0;
+    font-size: 15px;
+}
