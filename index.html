@@ -241,37 +241,52 @@
 
         <div class="calc-services">
           <label class="calc-item">
-            <input type="checkbox">
+            <input type="checkbox" class="service-checkbox" data-price="30" data-time="90">
             <span>Маникюр + укрепление + покрытие - 30 € (90 мин)</span>
           </label>
 
           <label class="calc-item">
-            <input type="checkbox">
+            <input type="checkbox" class="service-checkbox" data-price="20" data-time="60">
             <span>Снятие покрытия + маникюр - 20 € (60 мин)</span>
           </label>
 
           <label class="calc-item">
-            <input type="checkbox">
+            <input type="checkbox" class="service-checkbox" data-price="35" data-time="120">
             <span>Наращивание S (1-2 длина) - 35 € (120 мин)</span>
           </label>
 
           <label class="calc-item">
-            <input type="checkbox">
+            <input type="checkbox" class="service-checkbox" data-price="40" data-time="120">
             <span>Наращивание M (3-4 длина) - 40 € (120 мин)</span>
           </label>
 
           <label class="calc-item">
-            <input type="checkbox">
+            <input type="checkbox" class="service-checkbox" data-price="45" data-time="135">
             <span>Наращивание L (5-6 длина) - 45 € (135 мин)</span>
           </label>
 
           <label class="calc-item">
-            <input type="checkbox">
+            <input type="checkbox" class="service-checkbox" data-price="50" data-time="140">
             <span>Наращивание XL (от 7 длины) - 50 € (140 мин)</span>
           </label>
 
           <label class="calc-item">
-            <input type="checkbox">
+            <input type="checkbox" class="service-checkbox" data-price="30" data-time="90">
+            <span>Коррекция S - 30 € (90 мин)</span>
+            </label>
+
+          <label class="calc-item">
+            <input type="checkbox" class="service-checkbox" data-price="35" data-time="120">
+            <span>Коррекция M - 35 € (120 мин)</span>
+          </label>
+          
+          <label class="calc-item">
+            <input type="checkbox" class="service-checkbox" data-price="40" data-time="120">
+            <span>Коррекция L - 40 € (120 мин)</span>
+          </label>
+
+          <label class="calc-item">
+            <input type="checkbox" class="service-checkbox" data-price="0" data-time="10">
             <span>Дизайн ( втирка, простой рисунок 2 ногтя, кошачий глаз, стразы ) - 0 € (10 мин)</span>
           </label>
 
@@ -282,8 +297,8 @@
         </div>
 
         <div class="calc-result">
-          <p>Итоговая стоимость: <strong>0 €</strong></p>
-          <p>Примерное время: <strong>0 минут</strong></p>
+          <p>Итоговая стоимость: <strong id="total-price">0 €</strong></p>
+          <p>Примерное время: <strong id="total-time">0 минут</strong></p>
         </div>
       </div>
      </section>
